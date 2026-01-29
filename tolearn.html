@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unit 3 - CSS Concepts</title>
+
+<!-- External Style Example -->
+<link rel="stylesheet" href="style.css">
+
+<style>
+/* Internal CSS Example */
+body {
+  font-family: Arial, sans-serif;
+  margin: 30px;
+  background-color: #f7f7f7;
+}
+
+/* Section headings */
+h2 {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+/* CSS Properties and Styling */
+.box {
+  background-color: lightblue;
+  color: darkblue;
+  padding: 15px;
+  margin-top: 10px;
+  border: 2px solid navy;
+  border-radius: 10px;
+}
+
+/* Block element styling */
+.block {
+  display: block;
+  width: 200px;
+  background-color: coral;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+/* Image styling */
+img {
+  width: 100px;
+  border-radius: 50%;
+  border: 2px solid gray;
+}
+
+/* List styling */
+ul {
+  list-style-type: square;
+  color: darkgreen;
+}
+
+/* Table styling */
+table {
+  border-collapse: collapse;
+  width: 70%;
+  margin-top: 10px;
+}
+td, th {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+/* ID and Class example */
+#header {
+  background-color: lightgreen;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 5px;
+}
+
+/* Color examples */
+.color-examples {
+  display: flex;
+  gap: 10px;
+}
+.color-box {
+  width: 100px;
+  height: 60px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+}
+.red { background-color: red; }
+.green { background-color: rgb(0,128,0); }
+.blue { background-color: #0000ff; }
+
+/* Layout using Flexbox */
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+.flex-item {
+  background-color: skyblue;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100px;
+  text-align: center;
+}
+
+/* Layout using Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin-top: 15px;
+}
+.grid-item {
+  background-color: lightcoral;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+}
+</style>
+</head>
+<body>
+
+<h1 style="text-align:center;">UNIT 3 – Cascading Style Sheets (CSS)</h1>
+
+<!-- 1. Concept of CSS -->
+<h2>1. Concept of CSS</h2>
+<p>CSS is used to style HTML elements to control color, layout, and fonts.</p>
+<p style="color: blue;">This line uses inline CSS (blue text).</p>
+
+<!-- 2. Creating Style Sheet -->
+<h2>2. Creating Style Sheet</h2>
+<p>There are three ways: Inline, Internal, and External CSS. This page uses both internal and external styles.</p>
+
+<!-- 3. CSS Properties -->
+<h2>3. CSS Properties</h2>
+<div class="box">This box uses padding, margin, border, color, and background-color properties.</div>
+
+<!-- 4. CSS Styling -->
+<h2>4. CSS Styling Example</h2>
+<p style="font-family: Verdana; line-height: 1.5;">This paragraph demonstrates text styling using font family and line height.</p>
+
+<!-- 5. Block Elements and Objects -->
+<h2>5. Working with Block Elements and Objects</h2>
+<div class="block">Block 1</div>
+<div class="block">Block 2</div>
+<p>Below is an image styled as an object:</p>
+<img src="https://via.placeholder.com/100" alt="Example Image">
+
+<!-- 6. Lists and Tables -->
+<h2>6. Working with Lists and Tables</h2>
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+</ul>
+
+<table>
+  <tr><th>Language</th><th>Type</th></tr>
+  <tr><td>HTML</td><td>Markup</td></tr>
+  <tr><td>CSS</td><td>Style Sheet</td></tr>
+</table>
+
+<!-- 7. CSS ID and Class -->
+<h2>7. CSS ID and Class</h2>
+<div id="header">This is styled using ID = header</div>
+<div class="card">Card using class</div>
+<div class="card">Another card using same class</div>
+
+<!-- 8. CSS Colour -->
+<h2>8. CSS Colour</h2>
+<div class="color-examples">
+  <div class="color-box red">Red</div>
+  <div class="color-box green">Green (RGB)</div>
+  <div class="color-box blue">Blue (#HEX)</div>
+</div>
+
+<!-- 9. Page Layout and Site Design -->
+<h2>9. Creating Page Layout and Site Designs</h2>
+<p><b>Using Flexbox:</b></p>
+<div class="flex-container">
+  <div class="flex-item">Left</div>
+  <div class="flex-item">Middle</div>
+  <div class="flex-item">Right</div>
+</div>
+
+<p><b>Using Grid:</b></p>
+<div class="grid-container">
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>
+</div>
+
+</body>
+</html>
